@@ -4,12 +4,11 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+### Alteration Master Lim
 
-### More Information
+To be updated.
 
-A place to include any other types of information that you'd like to include about yourself. 
 
 ### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+I do not have a personal email account.  
+[onefamilycleaners@gmail.com](mailto:onefamilycleaners@gmail.com)
