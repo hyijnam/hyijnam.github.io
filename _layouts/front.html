@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+<meta property="og:site_name" content="{{ site.name }}">
+<meta property="og:title" content="{{ page.title }}">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://onefamilycleaners.com{{ page.url }}">
+<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% endif %}">
+{% if page.featured %}<meta property="og:image" content="{{ site.home_url }}{{ page.featured }}">{% endif %}
+<link rel="stylesheet" href="{{ site.baseurl }}/css/normalize.css">
+<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+<link rel="shortcut icon" href="/assets/logo@2x.png" />
+</head>
+<body>
+	<header>
+		<h1><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+		<p>{{ site.description }}</p>
+	</header>
+	<aside>
+		{{ content }}
+	</aside>
+	<main roll="main">
+		<h2>Address</h2>
+		<p>4810 Dale Blvd. Woodbridge, VA</p>
+		<h2>Time</h2>
+		<p>Mon, Tue, Wed, Thurs, Fri 7am - 8pm</p>
+		<p>Sat 7am - 6pm</p>
+		<p>Sun Closed</p>
+		<h2>Phone</h2>
+		<p>(703) 590-4040</p>
+		<h2>What We Do</h2>
+		<ul>
+			<li>Dry Cleaning</li>
+			<li>Laundry</li>
+			<li>Wedding Gown</li>
+			<li>Tailoring</li>
+			<li>Alteration</li>
+		</ul>
+		<h2>Our Specialty</h2>
+		<p></p>
+		<h2>Who We Are</h2>
+		<p>One Family Cleaners is a family owned cleaner.  </p>
+ 
+	</main>
+	<footer>
+		<p>© 2015 One Family Cleaners</p>
+	</footer>
+	
+</body>
+</html>
